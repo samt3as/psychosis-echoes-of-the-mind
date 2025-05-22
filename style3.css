@@ -1,0 +1,122 @@
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+       
+    }
+nav {
+   height: 100px;
+   background: #5a5a5a;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0rem calc((100vw - 1300px) / 2);  
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+padding: 0 1.5rem;
+}
+
+.below {
+    background: black;
+}
+.below-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding:3rem calc((100vw - 1300px) / 2);
+    background-color: black;
+}
+
+.html {
+    background-color: black;
+}
+.column-left {
+    display: flex;
+    flex-direction: column; /* Ensures elements stack vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: flex-start; /* Centers horizontally */
+    text-align: center; /* Ensures text alignment */
+    background-color: black;
+    width: 100%; /* Expands to the full container */
+    padding: 2rem; /* Adds spacing around the content */
+    color: white;
+
+    .trailer1-section {
+        margin-top: 3rem; /* Pushes the whole section down */
+    }
+    .trailers-container {
+        display: flex;
+        justify-content: center; /* Horizontally centers all trailers */
+        gap: 3rem; /* Adds space between each trailer */
+        text-align: center;
+        padding: 3rem;
+        width: 100%;
+    }
+    
+    .trailer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px; /* Ensures consistent width */
+    }
+    
+
+.trailer h1 {
+    margin-bottom: 1rem; /* Creates spacing between the heading and link */
+    color: white;
+}
+
+.trailer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+
+
+.column-left h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.column-left p {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    background: black;
+}
+.column-left a {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background: black;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+    };
